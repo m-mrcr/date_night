@@ -15,4 +15,10 @@ class NodeTest < MiniTest::Test
     assert_nil @node.left
     assert_nil @node.right
   end
+
+  def test_it_can_present_formatted_data
+    expected = {"Cloud Atlas"=>91}
+
+    assert_equal expected, @node.data
+  end
 end
